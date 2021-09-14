@@ -268,3 +268,7 @@ func Panicln(args ...interface{}) {
 func Fatalln(args ...interface{}) {
 	std.Fatalln(args...)
 }
+
+func SetLevelOutput(level Level, output io.Writer) {
+	std.SetLevelOutput(level, output)
+}
